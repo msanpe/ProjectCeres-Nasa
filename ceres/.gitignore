@@ -1,0 +1,5 @@
+/build/
+/phpunit.xml
+var/cache/*
+var/dev.log
+web/prediction.txt

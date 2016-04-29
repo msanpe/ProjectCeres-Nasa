@@ -1,0 +1,15 @@
+rest_check:
+    path:     /api/check
+    defaults: { _controller: RestBundle:Default:check }
+
+loc_set:
+    path:     /api/setLocation
+    defaults: { _controller: RestBundle:Default:setLocation }
+
+loc_get:
+    path:     /api/getLocation
+    defaults: { _controller: RestBundle:Default:getLocation }
+
+before_check:
+    path:     /api/checkBefore
+    defaults: { _controller: RestBundle:Default:checkBefore }

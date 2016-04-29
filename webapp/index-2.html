@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset=utf-8 />
+  <title>Mapbox test</title>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    .map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+  <body>
+<div id='map-one' class='map'> </div>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css' rel='stylesheet' />
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoicmVuZGVyZGFuaSIsImEiOiJjaW0zZHY1NWswMG9ndnVtNTA0djhvMjJrIn0.tYJY3vot895MR5HdjaLeWg';
+var geojson = [
+  {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+     "coordinates": [
+          2.1666484,41.3751415
+        ]
+    },
+    "properties": {
+      "marker-color": "#e30054",
+      "marker-symbol": "airport"
+    }
+  }
+];
+  
+var map = L.mapbox.map('map-one', 'mapbox.dark').setView([41.3751415,2.1666484], 15);
+var myLayer = L.mapbox.featureLayer().addTo(map);
+myLayer.setGeoJSON(geojson);
+  var mapboxClient = new MapboxClient('pk.eyJ1IjoicmVuZGVyZGFuaSIsImEiOiJjaW0zZHY1NWswMG9ndnVtNTA0djhvMjJrIn0.tYJY3vot895MR5HdjaLeWg');
+mapboxClient.getDirections([
+  { latitude: 33.6, longitude: -95.4431 },
+  { latitude: 33.2, longitude: -95.4431 }],
+  function(err, res) {
+  console.log(res);
+});
+</script>
+</body>
+</html>
