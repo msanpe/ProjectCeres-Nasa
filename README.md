@@ -16,3 +16,12 @@ We have developed a solution using a web server which receives a GPS position fr
 The advantages of our solution is that we don’t need complicated drones to make it work, just a basic sensorless GPS capable drone.
 
 Because all the calculations are done on our server, our solution is completely distributed and we accept web, desktop and mobile clients.
+
+Creators:
+Arancha Ferrero - https://github.com/aranchafoz
+Dani Jimenez - https://github.com/jagerchief
+Enrique Mas - https://github.com/enriquemc96
+Jose Franciso Martinez Garcia - https://github.com/BroWDRock
+Miguel Sancho Peña - https://github.com/msanpe
+Pavel Razgovorov - https://github.com/paveltrufi
+Raul Pera Pairó - https://github.com/rpairo
