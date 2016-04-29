@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_margin="5dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:orientation="vertical"
+            android:layout_width="@dimen/cardview_fragments_pelicula_width"
+            android:layout_height="@dimen/cardview_fragments_pelicula_height"
+
+            android:layout_gravity="center"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poster_pelicula"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/rain"/>
+
+
+                <TextView
+                    android:id="@+id/titulo_categoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:text="Precipitations"
+                    android:layout_below="@+id/poster_pelicula"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/titulo_precipitaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/black_transparent"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/texto_medidas"
+                    android:text="0 mm"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:orientation="vertical"
+            android:layout_width="@dimen/cardview_fragments_pelicula_width"
+            android:layout_height="@dimen/cardview_fragments_pelicula_height"
+
+            android:layout_margin="5dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:id="@+id/relative2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poster_pelicula2"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/temperatura"/>
+
+
+                <TextView
+                    android:id="@+id/titulo_categoria2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:text="Temperature"
+                    android:layout_below="@+id/poster_pelicula2"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/black_transparent"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/texto_medidas"
+                    android:text="20º"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:orientation="vertical"
+            android:layout_width="@dimen/cardview_fragments_pelicula_width"
+            android:layout_height="@dimen/cardview_fragments_pelicula_height"
+
+
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:layout_margin="5dp"
+            android:layout_marginTop="0dp"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:id="@+id/relative3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poster_pelicula3"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/velocidad"/>
+
+
+                <TextView
+                    android:id="@+id/titulo_categoria3"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:text="Wind Speed"
+                    android:layout_below="@+id/poster_pelicula3"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/velocidad_viento"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/black_transparent"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/texto_medidas"
+                    android:text="7 Km/h"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+            android:orientation="vertical"
+            android:layout_width="@dimen/cardview_fragments_pelicula_width"
+            android:layout_height="@dimen/cardview_fragments_pelicula_height"
+
+
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            android:layout_marginTop="0dp"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:layout_margin="5dp"
+            android:clickable="true" >
+
+            <RelativeLayout
+                android:id="@+id/relative4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poster_pelicula4"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/rafaga"/>
+
+
+                <TextView
+                    android:id="@+id/titulo_categoria4"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:text="Wind Gust"
+                    android:layout_below="@+id/poster_pelicula4"
+                    android:gravity="center" />
+
+
+                <TextView
+                    android:id="@+id/rafaga"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/cardview_light_background"
+                    android:background="@color/black_transparent"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="@dimen/texto_medidas"
+                    android:text="35 Km/h"
+                    android:gravity="center" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

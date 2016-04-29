@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">50dp</dimen>
+
+    <dimen name="card_view_padding">0dp</dimen>
+    <dimen name="card_layout_padding">.5dp</dimen>
+    <dimen name="card_view_roundcorner">0dp</dimen>
+
+    <dimen name="cardview_fragments_pelicula_height">250dp</dimen>
+    <dimen name="cardview_fragments_pelicula_width">172dp</dimen>
+    <dimen name="texto_medidas">27sp</dimen>
+
+</resources>

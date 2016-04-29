@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="@dimen/cardview_fragments_pelicula_width"
+    android:layout_height="@dimen/cardview_fragments_pelicula_height"
+
+
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true"
+    android:foreground="?android:attr/selectableItemBackground"
+
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/poster_pelicula"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="64dp"
+                android:src="@drawable/rain"/>
+
+
+            <TextView
+                android:id="@+id/titulo_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp"
+                android:text="Temperature"
+                android:layout_below="@+id/poster_pelicula"
+                android:gravity="center" />
+
+
+            <TextView
+                android:id="@+id/titulo_pelicula"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:textStyle="bold"
+                android:textColor="@color/cardview_light_background"
+                android:background="@color/black_transparent"
+                android:layout_alignParentBottom="true"
+                android:textSize="40sp"
+                android:text="20º"
+                android:gravity="center" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

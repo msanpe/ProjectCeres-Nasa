@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ceres</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="chart_label2">Risk Percentaje Prediction</string>
+</resources>
